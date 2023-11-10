@@ -8,7 +8,8 @@ export default function App({ Component, pageProps }: AppProps) {
     domain={config.domain}
     clientId={config.clientId}
     authorizationParams={{
-      redirect_uri: config.redirect_uri
+      redirect_uri: config.redirect_uri,
+      login_hint: "user@email.com"
     }}
     cacheLocation="localstorage"
   ><Component {...pageProps} /></Auth0Provider>

@@ -28,6 +28,15 @@ export default function Home() {
         <p>The profile page will prompt the user to login once the user clicks on the link</p>
         <p>The my account page will only be visible if the user is logged in</p>
 
+        <p> With query parameters</p>
+
+        <ul >
+          <li><a href="okta?flow=register">Register</a></li>
+          <li><a href="okta?flow=login">Login</a></li>
+          <li><a href="okta?flow=logout">Logout</a></li>
+        </ul>
+
+
       </main>
     </>
   )
